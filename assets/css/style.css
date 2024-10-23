@@ -125,21 +125,6 @@
     background: transparent;
 }
 
-.nav-btn-mobile:hover {
-    color: white !important;
-    border-color: transparent;
-    background: transparent;
-}
-
-.nav-btn-mobile:hover span svg path {
-    stroke: white;
-}
-
-.nav-btn-mobile svg {
-    position: relative;
-    z-index: 2;
-}
-
 /* hero */
 .hero-padding {
     padding-top: 37px;
@@ -300,11 +285,6 @@
 
 
 @media (max-width: 991.5px) {
-
-    .address-input {
-        min-width: 280px;
-    }
-
     .menu {
         position: relative;
         z-index: 100;
