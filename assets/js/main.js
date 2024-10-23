@@ -16,3 +16,5 @@ function handleNavVisibility() {
     document.querySelector(".menu").classList.toggle("cross");
   }
 }
+
+  

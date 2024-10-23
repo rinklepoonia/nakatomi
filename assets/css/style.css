@@ -20,6 +20,12 @@
     font-family: "Lucida", sans-serif;
 }
 
+.container {
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
 .gap-10 {
     gap: 10px;
 }
@@ -34,7 +40,7 @@
     backdrop-filter: blur(20px);
     background: var(--light-white);
     border-radius: 119px;
-    padding: 9px 12px;
+    padding: 8px 12px;
     cursor: pointer;
 }
 
@@ -59,7 +65,6 @@
 .nav-items:hover::after {
     width: 100%;
     right: 0;
-
 }
 
 .nav-items:hover {
@@ -67,7 +72,7 @@
 }
 
 .nav-btn {
-    padding: 13px 28px;
+    padding: 15px 28px;
     border: 1px solid var(--white-smoke);
     background: transparent;
     border-radius: 57px;
@@ -103,45 +108,6 @@
     background: transparent;
 }
 
-
-
-.nav-btn-mobile {
-    padding: 12px 20px;
-    background-color: green;
-    border-radius: 0px 50px 50px 40px;
-    border: none;
-    transition: all 300ms ease;
-    position: relative;
-    overflow: hidden;
-    color: white;
-    z-index: 1;
-}
-
-.nav-btn-mobile::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -10px;
-    width: 100%;
-    height: 100%;
-    background: yellow;
-    transform: translateX(-100%);
-    transition: transform 0.4s ease;
-    z-index: -1 !important;
-    border-radius: 0px 50px 50px 20px;
-    pointer-events: none;
-}
-
-.nav-btn-mobile:hover::before {
-    transform: translateX(0);
-}
-
-.bill-central-logo {
-    width: 105px;
-    height: 40px;
-    object-fit: cover;
-}
-
 .nav-btn-mobile:hover {
     color: white !important;
     border-color: transparent;
@@ -159,12 +125,16 @@
 
 /* hero */
 .hero-padding {
-    padding-top: 110px;
+    padding-top: 37px;
     padding-bottom: 133px;
 }
 
 .max-w-817 {
     max-width: 817px;
+}
+
+.object-position-top {
+    object-position: top;
 }
 
 .secure-text {
@@ -196,32 +166,78 @@
     -webkit-text-fill-color: transparent;
 }
 
-.common-btn {
+/* .common-btn {
     background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
-    padding: 14px 26px;
+    padding: 9px 17px;
     border-radius: 57px;
     border: 1px solid transparent;
     transition: all 300ms ease;
-    margin-bottom: 81px;
 }
 
 .common-btn:hover {
     background: transparent;
     border: 1px solid #F7EF8A;
     color: white;
+} */
+.common-btn {
+    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+    padding: 9px 17px;
+    border-radius: 57px;
+    border: 1px solid transparent;
+    transition: all 300ms ease;
+    position: relative;
+    overflow: hidden;
+    color: var(--dark-black);
+    z-index: 1;
 }
-.dashboard-image{
-    max-width: 970px;
-    height: 529px;
+
+.common-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+    z-index: -1 !important;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.common-btn:hover::before {
+    transform: translateX(0);
+}
+
+.common-btn:hover {
+    color: black !important;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.dashboard-image {
+    max-width: 320px;
+    height: auto;
     border-radius: 19px;
 }
-.hero-left-ellipse-pos{
+
+.hero-left-ellipse-pos {
     top: 20%;
     left: 0;
 }
-.hero-right-ellipse-pos{
+
+.hero-right-ellipse-pos {
     top: 20%;
     right: 0;
+}
+
+.ellipse-opacity {
+    opacity: 30%;
+}
+
+.hero-btn-mb {
+    margin-bottom: 29px;
 }
 
 
@@ -301,4 +317,48 @@
         background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
     }
 
+}
+
+@media (min-width:576px) {
+    .dashboard-image {
+        max-width: 600px;
+        height: auto;
+    }
+
+    .hero-btn-mb {
+        margin-bottom: 53px;
+    }
+
+    .common-btn {
+        padding: 14px 26px;
+    }
+
+    .hero-padding {
+        padding-top: 69px;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 1180px !important;
+    }
+}
+
+@media (min-width:992px) {
+    .hero-btn-mb {
+        margin-bottom: 81px;
+    }
+
+    .hero-padding {
+        padding-top: 110px;
+    }
+
+    .dashboard-image {
+        max-width: 970px;
+        height: 529px;
+    }
+
+    .ellipse-opacity {
+        opacity: 100%;
+    }
 }
