@@ -30,9 +30,26 @@
     gap: 10px;
 }
 
+.hero-bg {
+    background-image: url(../images/png/hero-bg.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.nav-modification {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 10.42%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 89.59%)1;
+    background: #FFFFFF05;
+    backdrop-filter: blur(7px)
+}
+
 .nav-py {
     padding-top: 23px;
     padding-bottom: 23px;
+}
+
+.nav-gap {
+    gap: 134px;
 }
 
 .language-btn {
@@ -166,21 +183,8 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* .common-btn {
-    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
-    padding: 9px 17px;
-    border-radius: 57px;
-    border: 1px solid transparent;
-    transition: all 300ms ease;
-}
-
-.common-btn:hover {
-    background: transparent;
-    border: 1px solid #F7EF8A;
-    color: white;
-} */
 .common-btn {
-    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%)border-box;
     padding: 9px 17px;
     border-radius: 57px;
     border: 1px solid transparent;
@@ -198,7 +202,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+    background: white;
     transform: translateX(-100%);
     transition: transform 0.4s ease;
     z-index: -1 !important;
@@ -211,8 +215,8 @@
 }
 
 .common-btn:hover {
-    color: black !important;
-    border: 1px solid transparent;
+    color: #AE8625 !important;
+    border: 1px solid #AE8625;
     background: transparent;
 }
 
@@ -223,12 +227,12 @@
 }
 
 .hero-left-ellipse-pos {
-    top: 20%;
+    top: 30%;
     left: 0;
 }
 
 .hero-right-ellipse-pos {
-    top: 20%;
+    top: 22%;
     right: 0;
 }
 
@@ -238,6 +242,60 @@
 
 .hero-btn-mb {
     margin-bottom: 29px;
+}
+
+.z-99 {
+    z-index: 99;
+}
+
+
+.dropdown-modification {
+    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+    width: 105px;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    position: relative;
+    z-index: -1;
+}
+
+.dropdown-position {
+    top: 50px;
+    left: 6px;
+}
+
+#btn.active.dropdown-modification {
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.hero-ellipse-modification {
+    width: 316px;
+    height: 316px;
+    opacity: 26%;
+    filter: blur(128px);
+    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+    bottom: 0;
+    left: 0;
+}
+
+.nav-ellipse-modification {
+    width: 361px;
+    height: 361px;
+    opacity: 20%;
+    filter: blur(128px);
+    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+    top: 0;
+    left: 0;
 }
 
 
@@ -258,11 +316,11 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         position: fixed;
         left: -100%;
         top: 0;
-        z-index: 90;
+        z-index: 99;
         transition: all 300ms linear;
         background-color: black;
     }
@@ -330,7 +388,7 @@
     }
 
     .common-btn {
-        padding: 14px 26px;
+        padding: 12px 28px;
     }
 
     .hero-padding {
@@ -356,6 +414,13 @@
     .dashboard-image {
         max-width: 970px;
         height: 529px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-left-ellipse-pos {
+        top: 40%;
+        left: 0;
     }
 
     .ellipse-opacity {

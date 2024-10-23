@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="position-relative">
+    <header class="position-relative hero-bg">
         <!-- ellipse -->
         <div class="position-absolute hero-left-ellipse-pos">
             <img class="ellipse-opacity" src="./assets/images/svg/hero-left-ellip.svg" alt="hero-left-ellipse">
@@ -21,72 +21,84 @@
         </div>
 
         <!--=-=-=-=-=-=-=-=-=-=-=-=- NAVBAR =-=-=-=-=-=-=-=-=-=-=-= -->
-        <nav class="overflow-hidden nav-py bg-black">
+        <nav class="nav-py nav-modification position-relative z-99">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
                     <a href="/" aria-label="page logo" class=""><img width="171" height="53"
                             src="./assets/images/webp/page-logo.webp" class="NakatomiCoLogo w-100" alt="bill-logo"></a>
-                    <ul class="mb-0  ps-0 d-flex gap-4 align-items-center mobile-view">
-                        <li>
-                            <a onclick="closeNav()" aria-label="Features" class="nav-items fw-normal fs-md leading-117"
-                                href="#features">Features</a>
-                        </li>
-                        <li>
-                            <a onclick="closeNav()" aria-label="About link"
-                                class="nav-items fw-normal fs-md leading-117" href="#about">About Us</a>
-                        </li>
-                        <li>
-                            <a onclick="closeNav()" aria-label="Blog link" class="nav-items fw-normal fs-md leading-117"
-                                href="#blog">Blog</a>
-                        </li>
-                        <li class="d-sm-none">
-                            <a href="#joinWaitlist" onclick="closeNav()">
-                                <button aria-label="join Waitlist"
-                                    class="nav-btn d-sm-none d-block d-flex align-items-center fw-semibold fs-md leading-117">Join
-                                    the Waitlist
-                                </button>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="d-flex align-items-center gap-4">
+                    <div class="d-flex align-items-center nav-gap">
+                        <ul class="mb-0  ps-0 d-flex gap-4 align-items-center mobile-view">
+                            <li>
+                                <a onclick="closeNav()" aria-label="Features"
+                                    class="nav-items fw-normal fs-md leading-117" href="#features">Features</a>
+                            </li>
+                            <li>
+                                <a onclick="closeNav()" aria-label="About link"
+                                    class="nav-items fw-normal fs-md leading-117" href="#about">About Us</a>
+                            </li>
+                            <li>
+                                <a onclick="closeNav()" aria-label="Blog link"
+                                    class="nav-items fw-normal fs-md leading-117" href="#blog">Blog</a>
+                            </li>
+                            <li class="d-sm-none">
+                                <a href="#joinWaitlist" onclick="closeNav()">
+                                    <button aria-label="join Waitlist"
+                                        class="nav-btn d-sm-none d-block d-flex align-items-center fw-semibold fs-md leading-117">Join
+                                        the Waitlist
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
                         <div class="d-flex align-items-center gap-4">
-                            <div class="d-sm-flex d-none align-items-center gap-10 language-btn ">
-                                <img src="./assets/images/svg/united-kingdom.svg" alt="united-kingdom">
-                                <div class="d-flex align-items-center gap-10">
-                                    <p class="fw-normal fs-md leading-150 clr-light-gray  mb-0">Eng</p>
-                                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0.351707 0.0401261C0.0763252 0.14691 -0.0635535 0.442275 0.0279114 0.72388C0.0635622 0.833646 0.175641 0.94844 2.61004 3.36866C4.46351 5.21138 5.18052 5.91109 5.24922 5.94424C5.38007 6.00739 5.52237 6.01709 5.66199 5.97237C5.77176 5.93723 5.8922 5.82124 8.32469 3.40839C10.3001 1.44894 10.8823 0.859697 10.9164 0.785377C10.9406 0.732656 10.9693 0.672884 10.9802 0.652542C11.0075 0.601929 11.0062 0.417033 10.9787 0.433904C10.9669 0.441146 10.9572 0.431752 10.9572 0.413007C10.9572 0.351041 10.8758 0.219122 10.7901 0.142224C10.6293 -0.00205074 10.3911 -0.0376027 10.1904 0.0527153C10.1368 0.0768071 9.33713 0.855182 7.79866 2.38066L5.48736 4.67241L3.16535 2.36937C1.03533 0.256761 0.834579 0.0634724 0.737623 0.0317759C0.600297 -0.0131061 0.482426 -0.01055 0.351707 0.0401261ZM0.00247113 0.551061C0.00247113 0.615498 0.00648238 0.641848 0.0113945 0.60964C0.0163067 0.577433 0.0163067 0.52469 0.0113945 0.492483C0.00648238 0.460275 0.00247113 0.486625 0.00247113 0.551061Z"
-                                            fill="#FCFCFC" />
-                                    </svg>
+                            <div class="d-flex align-items-center gap-4">
+                                <!--  -->
+                                <div class="d-md-flex d-none align-items-center gap-10 language-btn  position-relative" onClick="toggleClass(event)">
+                                    <img src="./assets/images/svg/united-kingdom.svg" alt="united-kingdom">
+                                    <div class="d-flex align-items-center gap-10">
+                                        <p class="fw-normal fs-md leading-150 clr-light-gray mb-0">Eng</p>
+                                        <svg id="dropdown-arrow"  class="arrow" width="11" height="6" viewBox="0 0 11 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.351707 0.0401261C0.0763252 0.14691 -0.0635535 0.442275 0.0279114 0.72388C0.0635622 0.833646 0.175641 0.94844 2.61004 3.36866C4.46351 5.21138 5.18052 5.91109 5.24922 5.94424C5.38007 6.00739 5.52237 6.01709 5.66199 5.97237C5.77176 5.93723 5.8922 5.82124 8.32469 3.40839C10.3001 1.44894 10.8823 0.859697 10.9164 0.785377C10.9406 0.732656 10.9693 0.672884 10.9802 0.652542C11.0075 0.601929 11.0062 0.417033 10.9787 0.433904C10.9669 0.441146 10.9572 0.431752 10.9572 0.413007C10.9572 0.351041 10.8758 0.219122 10.7901 0.142224C10.6293 -0.00205074 10.3911 -0.0376027 10.1904 0.0527153C10.1368 0.0768071 9.33713 0.855182 7.79866 2.38066L5.48736 4.67241L3.16535 2.36937C1.03533 0.256761 0.834579 0.0634724 0.737623 0.0317759C0.600297 -0.0131061 0.482426 -0.01055 0.351707 0.0401261ZM0.00247113 0.551061C0.00247113 0.615498 0.00648238 0.641848 0.0113945 0.60964C0.0163067 0.577433 0.0163067 0.52469 0.0113945 0.492483C0.00648238 0.460275 0.00247113 0.486625 0.00247113 0.551061Z"
+                                                fill="#FCFCFC" />
+                                        </svg>
+                                    </div>
+                                    <div id="btn"
+                                        class="d-flex flex-column gap-2 position-absolute dropdown-modification dropdown-position">
+                                        <span
+                                            class="fw-normal fs-md leading-150 text-black hover cursor-poniter">hindi</span>
+                                        <span
+                                            class="fw-normal fs-md leading-150 text-black hover cursor-poniter">Franch</span>
+                                    </div>
                                 </div>
+                                <a href="#joinWaitlist">
+                                    <button aria-label="join Waitlist"
+                                        class="nav-btn d-none d-sm-block d-flex align-items-center fw-semibold fs-md leading-117">Join
+                                        the Waitlist
+                                    </button>
+                                </a>
                             </div>
-                            <a href="#joinWaitlist">
-                                <button aria-label="join Waitlist"
-                                    class="nav-btn d-none d-sm-block d-flex align-items-center fw-semibold fs-md leading-117">Join the Waitlist
-                                </button>
-                            </a>
-                        </div>
-                        <div class="menu d-lg-none" onclick="openNav()">
-                            <span></span>
-                            <span class="my-2"></span>
-                            <span></span>
+                            <div class="menu d-lg-none" onclick="openNav()">
+                                <span></span>
+                                <span class="my-2"></span>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- hero -->
-        <div class="bg-black hero-padding">
+        <div class="hero-padding">
             <div class="container">
                 <div class="secure-text mx-auto">
                     <p class="ff-lucida fw-normal fs-sm leading-150 clr-white-smoke text-center mb-0">Secure Your Cloud,
                         Focus on Your Business</p>
                 </div>
                 <h1
-                    class="ff-lucida fw-normal fs-5xl leading-120 max-w-817 clr-white-smoke text-center mx-auto lg:pb-3 pb-2 mb-lg-1 mb-0">
-                    Effortless <span class="gradient-text">Cloud Security</span> for Growing Businesses</h1>
+                    class="ff-lucida fw-normal fs-5xl leading-120 max-w-817 clr-white-smoke text-center mx-auto pb-lg-1 pb-2 mb-lg-3 mb-0">
+                    Effortless <span class="gradient-text fw-semibold ff-lucida">Cloud Security</span> for Growing
+                    Businesses</h1>
                 <p class="fw-normal fs-md leading-150 clr-light-gray text-center pb-md-4 pb-3 mb-lg-3 mb-0">Set up
                     secure
                     cloud systems and
