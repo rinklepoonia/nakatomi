@@ -87,11 +87,12 @@
     color: #888;
 }
 
-/* .accordion-item-why-choose.active .caret::before {
-    transform: translate(-50%, -25%) rotate(-135deg);
-} */
-
 .accordion-item-why-choose:hover {
     transform: translateY(-2px);
     transition: transform 0.3s ease;
+}
+
+.accordion-item-why-choose.active .accordion-header-why-choose {
+    flex-direction: column !important;
+    align-items: start !important;
 }

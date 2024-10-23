@@ -42,7 +42,11 @@ document.querySelectorAll('.accordion-button').forEach(button => {
 });
 
 
-document.querySelectorAll('.accordion-header-why-choose').forEach(header => {
+document.querySelectorAll('.accordion-content-wrapper').forEach(wrapper => {
+  wrapper.style.height = '0px';
+});
+
+document.querySelectorAll('.accordion-header-why-choose').forEach((header, index) => {
   header.addEventListener('click', () => {
     const item = header.parentElement;
     const wrapper = header.nextElementSibling;
@@ -54,6 +58,7 @@ document.querySelectorAll('.accordion-header-why-choose').forEach(header => {
       currentlyActive.classList.remove('active');
       activeWrapper.style.height = '0px';
     }
+
     if (item.classList.contains('active')) {
       item.classList.remove('active');
       wrapper.style.height = '0px';
@@ -62,8 +67,13 @@ document.querySelectorAll('.accordion-header-why-choose').forEach(header => {
       wrapper.style.height = content.offsetHeight + 'px';
     }
   });
-});
 
-document.querySelectorAll('.accordion-content-wrapper').forEach(wrapper => {
-  wrapper.style.height = '0px';
+  if (index === 0) {
+    const item = header.parentElement;
+    const wrapper = header.nextElementSibling;
+    const content = wrapper.querySelector('.accordion-content');
+
+    item.classList.add('active');
+    wrapper.style.height = content.offsetHeight + 'px';
+  }
 });
