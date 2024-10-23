@@ -1,0 +1,97 @@
+.custom-accordion .accordion-item {
+    margin-bottom: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 24px;
+    background: linear-gradient(315.97deg, rgba(255, 255, 255, 0) 1.86%, rgba(255, 255, 255, 0.1) 99.45%);
+}
+
+.custom-accordion {
+    max-width: 791px !important;
+}
+
+.custom-accordion .accordion-button {
+    border-radius: 8px;
+}
+
+.custom-accordion .icon {
+    margin-left: auto;
+    position: absolute;
+    right: 0px;
+}
+
+.accordion-body {
+    max-width: 671px;
+}
+
+.why-choose-dashboard-image {
+    max-width: 538px;
+    min-height: 559px;
+}
+
+/* diff css */
+
+.accordion-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.accordion-item-why-choose {
+    background: #222;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.accordion-header-why-choose {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.icon-why-choose {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    background: #FFD700;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-why-choose svg {
+    width: 16px;
+    height: 16px;
+    fill: #222;
+}
+
+.accordion-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+.accordion-content-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+
+.accordion-content {
+    padding: 0 20px 20px;
+    color: #888;
+}
+
+/* .accordion-item-why-choose.active .caret::before {
+    transform: translate(-50%, -25%) rotate(-135deg);
+} */
+
+.accordion-item-why-choose:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}

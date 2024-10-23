@@ -17,6 +17,7 @@
     --white-smoke: #FCFCFC;
     --light-white: #FFFFFF0D;
     --semi-transparent-white: #FFFFFF33;
+    --dark-grey: #1a1a1a;
 
 }
 
@@ -31,6 +32,11 @@
 
 .clr-dark-black {
     color: var(--dark-black);
+}
+
+/* background color */
+.bg-dark-grey {
+    background: var(--dark-grey);
 }
 
 /* ------------------------ FONT-SIZE----------- */
