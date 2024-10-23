@@ -10,6 +10,10 @@
     max-width: 791px !important;
 }
 
+.accordion-item.collapse .accordion-button {
+    color: #FFD700 !important;
+}
+
 .custom-accordion .accordion-button {
     border-radius: 8px;
 }
@@ -52,6 +56,10 @@
     position: relative;
 }
 
+.accordion-item-why-choose.active .accordion-header-why-choose {
+    padding: 20px 20px 16px 20px !important;
+}
+
 .icon-why-choose {
     width: 24px;
     height: 24px;
@@ -70,16 +78,13 @@
 }
 
 .accordion-title {
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
     flex-grow: 1;
 }
 
 .accordion-content-wrapper {
     height: 0;
     overflow: hidden;
-    transition: height 0.35s ease;
+    transition: height 0.45s ease;
 }
 
 .accordion-content {
@@ -95,4 +100,8 @@
 .accordion-item-why-choose.active .accordion-header-why-choose {
     flex-direction: column !important;
     align-items: start !important;
+}
+
+.accordion-item-why-choose.active .accordion-title {
+    padding-top: 24px;
 }
