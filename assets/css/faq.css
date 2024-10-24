@@ -1,0 +1,272 @@
+.custom-accordion .accordion-item {
+    margin-bottom: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    padding: 24px;
+    background: linear-gradient(315.97deg, rgba(255, 255, 255, 0) 1.86%, rgba(255, 255, 255, 0.1) 99.45%);
+}
+
+.accordion-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.1) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.fs-13 {
+    font-size: 42px;
+}
+
+.accordion-item .collapse::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.6) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.custom-accordion {
+    max-width: 791px !important;
+}
+
+.custom-accordion .accordion-button {
+    border-radius: 8px;
+}
+
+.mt-media-faq {
+    margin-top: 150px;
+}
+
+.custom-accordion .icon {
+    margin-left: auto;
+    position: absolute;
+    right: 0px;
+}
+
+.accordion-body {
+    max-width: 671px;
+}
+
+.why-choose-dashboard-image {
+    max-width: 538px;
+    max-height: 559px;
+}
+
+/* why choose us accordion css */
+
+.accordion-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.accordion-item-why-choose {
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    background: linear-gradient(315.97deg, rgba(255, 255, 255, 0) 1.86%, rgba(255, 255, 255, 0.1) 99.45%);
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.accordion-item-why-choose::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.1) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.accordion-item-why-choose.active::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.6) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.accordion-header-why-choose {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.accordion-item-why-choose.active .accordion-header-why-choose {
+    padding: 20px 20px 16px 20px !important;
+}
+
+.icon-why-choose {
+    width: 46px;
+    height: 46px;
+    margin-right: 15px;
+    border-radius: 12px;
+    background: #F7EF8A1A;
+    backdrop-filter: blur(20px);
+    position: relative;
+}
+
+.icon-why-choose::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(90deg, rgba(174, 134, 37, 0.6) 0%, rgba(247, 239, 138, 0.6) 33.73%, rgba(210, 172, 71, 0.6) 72.49%, rgba(237, 201, 103, 0.6) 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.accordion-item-why-choose.active .icon-why-choose {
+    box-shadow: 0px 0px 14.7px 0px #AE862566;
+}
+
+.accordion-title {
+    flex-grow: 1;
+}
+
+.accordion-content {
+    padding: 0 20px 20px;
+    color: #888;
+}
+
+.accordion-item-why-choose.active .accordion-header-why-choose {
+    flex-direction: column !important;
+    align-items: start !important;
+}
+
+.accordion-item-why-choose.active .accordion-title {
+    padding-top: 24px;
+}
+
+.accordion-item-why-choose {
+    display: grid;
+    grid-template-rows: auto 0fr;
+    transition: grid-template-rows 0.3s linear;
+    overflow: hidden;
+}
+
+.accordion-item-why-choose.active {
+    grid-template-rows: auto 1fr;
+}
+
+.accordion-content-wrapper {
+    overflow: hidden;
+}
+
+/* form css */
+
+.form-box {
+    border-radius: 18px;
+    padding: 32px;
+    max-width: 611px;
+    background: linear-gradient(315.97deg, rgba(255, 255, 255, 0) 1.86%, rgba(255, 255, 255, 0.1) 99.45%);
+}
+
+.form-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    padding: 1px;
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.1) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 0;
+}
+
+/* validation */
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-fields {
+    border: 1px solid #FFFFFF99;
+    background: #FFFFFF03;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+}
+
+#submitBtn {
+    width: 115px;
+    padding: 13px 28px;
+    border: none;
+    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+    border-radius: 57px;
+    cursor: pointer;
+}
+
+option {
+    padding: 10px !important;
+    margin-bottom: 15px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.error {
+    color: #ff6666;
+    font-size: 0.9em;
+    display: none;
+}
+
+.bottom-error {
+    bottom: -20px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #FFFFFF03 url('../images/svg/arrow-down-svg.svg') no-repeat right 15px center !important;
+    background-size: 18px;
+    padding-right: 40px;    
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .form-box {
+        padding: 16px;
+    }
+}

@@ -33,8 +33,6 @@
     --light-green: #05C16833;
     --light-slate: #B8B8B7;
     --dark-grey: #1A1A1A;
-
-
 }
 
 /* color */
@@ -78,6 +76,7 @@
     color: var(--light-slate);
 }
 
+/* background color */
 .bg-dark-grey {
     background: var(--dark-grey);
 }
