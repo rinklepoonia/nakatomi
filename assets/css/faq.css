@@ -154,7 +154,7 @@
 .accordion-content-wrapper {
     height: 0;
     overflow: hidden;
-    transition: height 0.45s ease;
+    transition: height 0.6s ease;
 }
 
 .accordion-content {
