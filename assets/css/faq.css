@@ -2,20 +2,49 @@
     margin-bottom: 10px;
     border-radius: 12px;
     overflow: hidden;
+    position: relative;
     padding: 24px;
     background: linear-gradient(315.97deg, rgba(255, 255, 255, 0) 1.86%, rgba(255, 255, 255, 0.1) 99.45%);
+}
+
+.accordion-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.1) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.accordion-item .collapse::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.6) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
 
 .custom-accordion {
     max-width: 791px !important;
 }
 
-.accordion-item.collapse .accordion-button {
-    color: #FFD700 !important;
-}
-
 .custom-accordion .accordion-button {
     border-radius: 8px;
+}
+
+.mt-media-faq {
+    margin-top: 150px;
 }
 
 .custom-accordion .icon {
@@ -30,10 +59,10 @@
 
 .why-choose-dashboard-image {
     max-width: 538px;
-    min-height: 559px;
+    max-height: 559px;
 }
 
-/* diff css */
+/* why choose us accordion css */
 
 .accordion-container {
     width: 100%;
@@ -41,10 +70,40 @@
 }
 
 .accordion-item-why-choose {
-    background: #222;
+    backdrop-filter: blur(20px);
     border-radius: 12px;
+    background: linear-gradient(315.97deg, rgba(255, 255, 255, 0) 1.86%, rgba(255, 255, 255, 0.1) 99.45%);
     margin-bottom: 16px;
     overflow: hidden;
+    position: relative;
+}
+
+.accordion-item-why-choose::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.1) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.accordion-item-why-choose.active::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.6) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
 }
 
 .accordion-header-why-choose {
@@ -61,20 +120,31 @@
 }
 
 .icon-why-choose {
-    width: 24px;
-    height: 24px;
+    width: 46px;
+    height: 46px;
     margin-right: 15px;
-    background: #FFD700;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 12px;
+    background: #F7EF8A1A;
+    backdrop-filter: blur(20px);
+    position: relative;
 }
 
-.icon-why-choose svg {
-    width: 16px;
-    height: 16px;
-    fill: #222;
+.icon-why-choose::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(90deg, rgba(174, 134, 37, 0.6) 0%, rgba(247, 239, 138, 0.6) 33.73%, rgba(210, 172, 71, 0.6) 72.49%, rgba(237, 201, 103, 0.6) 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.accordion-item-why-choose.active .icon-why-choose {
+    box-shadow: 0px 0px 14.7px 0px #AE862566;
 }
 
 .accordion-title {
@@ -90,11 +160,6 @@
 .accordion-content {
     padding: 0 20px 20px;
     color: #888;
-}
-
-.accordion-item-why-choose:hover {
-    transform: translateY(-2px);
-    transition: transform 0.3s ease;
 }
 
 .accordion-item-why-choose.active .accordion-header-why-choose {
