@@ -31,7 +31,7 @@
 }
 
 .hero-bg {
-    background-image: url(../images/png/hero-bg.png);
+    background-image: url(../images/webp/hero-bg.webp);
     background-size: 100% 100%;
     background-position: center;
 }
@@ -39,7 +39,7 @@
 .nav-modification {
     border-bottom: 1px solid;
     border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 10.42%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 89.59%)1;
-    background: #FFFFFF05;
+    background: var(--faint-white);
     backdrop-filter: blur(7px)
 }
 
@@ -200,8 +200,8 @@
 }
 
 .common-btn:hover {
-    color: #AE8625 !important;
-    border: 1px solid #AE8625;
+    color: var(--dark-gold) !important;
+    border: 1px solid var(--dark-gold);
     background: transparent;
 }
 
