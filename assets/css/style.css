@@ -144,6 +144,7 @@
     background: linear-gradient(90deg, rgba(174, 134, 37, 0.05) 0%, rgba(247, 239, 138, 0.05) 33.73%, rgba(210, 172, 71, 0.05) 72.49%, rgba(237, 201, 103, 0.05) 100%);
     backdrop-filter: blur(20px);
     margin-bottom: 10px;
+    border-radius: 9999px;
 }
 
 .secure-text::before {
@@ -239,7 +240,6 @@
 .hero-btn-mb {
     margin-bottom: 29px;
 }
-
 
 @media (max-width: 991.5px) {
 
@@ -360,5 +360,45 @@
 
     .ellipse-opacity {
         opacity: 100%;
+    }
+}
+
+
+
+
+
+.section-spacing {
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+@media (min-width:576px) {
+    .section-spacing {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+@media (min-width:768px) {
+    .section-spacing {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media (min-width:992px) {
+    .section-spacing {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+@media (min-width:1200px) {
+    .section-spacing {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+@media (min-width:1400px) {
+    .section-spacing {
+        padding-top: 75px;
+        padding-bottom: 75px;
     }
 }
