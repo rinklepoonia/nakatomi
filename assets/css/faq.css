@@ -252,6 +252,19 @@ option {
     bottom: -20px;
 }
 
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #FFFFFF03 url('../images/svg/arrow-down-svg.svg') no-repeat right 15px center !important;
+    background-size: 18px;
+    padding-right: 40px;    
+}
+
+select::-ms-expand {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .form-box {
         padding: 16px;
