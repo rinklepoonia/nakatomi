@@ -61,6 +61,8 @@ document.querySelectorAll('.accordion-header-why-choose').forEach((header, index
     header.parentElement.classList.add('active');
   }
 });
+
+// form Validation
 const form = document.getElementById('contactForm');
 let formSubmitted = false;
 const inputs = [
