@@ -151,12 +151,6 @@
     flex-grow: 1;
 }
 
-.accordion-content-wrapper {
-    height: 0;
-    overflow: hidden;
-    transition: height 0.6s ease;
-}
-
 .accordion-content {
     padding: 0 20px 20px;
     color: #888;
@@ -169,4 +163,19 @@
 
 .accordion-item-why-choose.active .accordion-title {
     padding-top: 24px;
+}
+
+.accordion-item-why-choose {
+    display: grid;
+    grid-template-rows: auto 0fr;
+    transition: grid-template-rows 0.3s linear;
+    overflow: hidden;
+}
+
+.accordion-item-why-choose.active {
+    grid-template-rows: auto 1fr;
+}
+
+.accordion-content-wrapper {
+    overflow: hidden;
 }
