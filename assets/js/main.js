@@ -61,3 +61,74 @@ document.querySelectorAll('.accordion-header-why-choose').forEach((header, index
     header.parentElement.classList.add('active');
   }
 });
+const form = document.getElementById('contactForm');
+let formSubmitted = false;
+const inputs = [
+  {
+    element: document.getElementById('fullName'),
+    errorElement: document.getElementById('fullNameError'),
+    validation: value => value.trim() !== '',
+    errorMessage: 'Full Name is required'
+  },
+  {
+    element: document.getElementById('companyName'),
+    errorElement: document.getElementById('companyNameError'),
+    validation: value => value.trim() !== '',
+    errorMessage: 'Company Name is required'
+  },
+  {
+    element: document.getElementById('companyEmail'),
+    errorElement: document.getElementById('companyEmailError'),
+    validation: value => validateEmail(value),
+    errorMessage: 'Invalid email format'
+  },
+  {
+    element: document.getElementById('interest'),
+    errorElement: document.getElementById('interestError'),
+    validation: value => value !== '',
+    errorMessage: 'Please select a reason'
+  }
+];
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  formSubmitted = true;
+  let isValid = true;
+  inputs.forEach(input => {
+    const { element, errorElement, validation, errorMessage } = input;
+    if (!validation(element.value)) {
+      errorElement.textContent = errorMessage;
+      errorElement.style.display = 'block';
+      isValid = false;
+    } else {
+      errorElement.style.display = 'none';
+    }
+  });
+  if (isValid) {
+    form.reset();
+    alert('Form submitted successfully!');
+    formSubmitted = false;
+  }
+});
+inputs.forEach(input => {
+  const { element, errorElement, validation, errorMessage } = input;
+  element.addEventListener('input', () => {
+    if (formSubmitted && !validation(element.value)) {
+      errorElement.textContent = errorMessage;
+      errorElement.style.display = 'block';
+    } else {
+      errorElement.style.display = 'none';
+    }
+  });
+  element.addEventListener('change', () => {
+    if (formSubmitted && !validation(element.value)) {
+      errorElement.textContent = errorMessage;
+      errorElement.style.display = 'block';
+    } else {
+      errorElement.style.display = 'none';
+    }
+  });
+});
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(String(email).toLowerCase());
+}

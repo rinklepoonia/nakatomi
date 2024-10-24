@@ -12,7 +12,73 @@
 </head>
 
 <body>
-    <div class="bg-black why-choose-us">
+    <div class="bg-black">
+        <!-- form -->
+        <div>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4 d-flex align-items-start justify-content-center flex-column">
+                        <h1
+                            class="ff-lucida fw-normal fs-13 leading-120 text-lg-start text-center clr-white-smoke mx-auto mb-3">
+                            Ready to Secure<span class="gradient-text"> Your Cloud?</span>
+                        </h1>
+                        <p class="fw-normal fs-md lh-150 text-white opacity-75 text-lg-start text-center">Join the
+                            waitlist today and be among the
+                            first to experience Nakatomi’s powerful cloud security solutions.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-box position-relative w-100 mx-lg-0 mx-auto">
+                            <div class="form-container">
+                                <form id="contactForm">
+                                    <div class="position-relative d-flex flex-column align-items-start w-100">
+                                        <label for="fullName" class="fw-normal fs-md leading-150 text-white mb-2">Full
+                                            Name</label>
+                                        <input type="text" class="w-100 form-fields" id="fullName" name="fullName">
+                                        <p class="error position-absolute bottom-error start-0 mb-0" id="fullNameError">
+                                        </p>
+                                    </div>
+
+                                    <div class="position-relative d-flex flex-column align-items-start w-100">
+                                        <label for="companyName"
+                                            class="fw-normal fs-md leading-150 text-white mb-2">Company Name</label>
+                                        <input type="text" id="companyName" name="companyName"
+                                            class="w-100 form-fields">
+                                        <p class="error position-absolute bottom-error start-0 mb-0"
+                                            id="companyNameError">
+                                        </p>
+                                    </div>
+
+                                    <div class="position-relative d-flex flex-column align-items-start w-100">
+                                        <label for="companyEmail"
+                                            class="fw-normal fs-md leading-150 text-white mb-2">Company Email</label>
+                                        <input type="email" id="companyEmail" name="companyEmail"
+                                            class="w-100 form-fields">
+                                        <p class="error position-absolute bottom-error start-0 mb-0"
+                                            id="companyEmailError">
+                                        </p>
+                                    </div>
+
+                                    <div class="position-relative d-flex flex-column align-items-start w-100">
+                                        <label for="interest" class="fw-normal fs-md leading-150 text-white mb-2">Reason
+                                            for Interest</label>
+                                        <select id="interest" name="interest" class="w-100 form-fields">
+                                            <option value="" selected></option>
+                                            <option value="Product Inquiry">Product Inquiry</option>
+                                            <option value="Support">Support</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                        <p class="error position-absolute bottom-error start-0 mb-0" id="interestError">
+                                        </p>
+                                    </div>
+
+                                    <button type="submit" id="submitBtn" class="position-relative">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- why choose us -->
         <div class="container mt-media-faq">
             <div class="secure-text mx-auto">
