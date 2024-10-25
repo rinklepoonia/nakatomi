@@ -162,10 +162,17 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 12,
+  speed: 1500,
+  autoplay: {
+    autoplaySpeed: 10000,
+    delay: 2000,
+    autoplayDisableOnInteraction: false
+  },
   navigation: {
     nextEl: '.swiper-btn-next',
     prevEl: '.swiper-btn-prev',
   },
+
   breakpoints: {
     450: {
       slidesPerView: 2,
@@ -239,6 +246,12 @@ const centerSwiper = new Swiper('.center-swiper', {
   spaceBetween: 20,
   centeredSlides: false,
   loop: true,
+  speed: 1500,
+  autoplay: {
+    autoplaySpeed: 10000,
+    delay: 2000,
+    autoplayDisableOnInteraction: false
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

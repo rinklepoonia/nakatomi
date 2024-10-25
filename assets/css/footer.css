@@ -118,8 +118,8 @@
   width: 185px !important;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-horizontal>.swiper-pagination-bullets-active,
+.swiper-pagination-bullets-active.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 0 !important;
@@ -135,11 +135,11 @@
   padding-bottom: 70px;
 }
 
-.swiper-pagination-bullets.swiper-pagination-horizontal {
+.swiper-pagination-bullets-active.swiper-pagination-horizontal {
   bottom: -7% !important;
 }
 
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-pagination-horizontal.swiper-pagination-bullets-active .swiper-pagination-bullet-slide {
   width: 26px !important;
   height: 15px !important;
   border-radius: 12px !important;
@@ -149,7 +149,7 @@
   background: linear-gradient(90deg, rgba(174, 134, 37, 0.2) 0%, rgba(247, 239, 138, 0.2) 33.73%, rgba(210, 172, 71, 0.2) 72.49%, rgba(237, 201, 103, 0.2) 100%) !important;
 
 }
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+.swiper-pagination-horizontal.swiper-pagination-bullets-active .swiper-pagination-bullet-active {
   width: 65px !important;
   height: 15px !important;
   background: #D2AC47 !important;
@@ -248,11 +248,11 @@
     margin: 0 auto 20px auto;
   }
   
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  .swiper-pagination-horizontal.swiper-pagination-bullets-active .swiper-pagination-bullet-slide {
     width: 22px !important;
     height: 13px !important;
   }
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  .swiper-pagination-horizontal.swiper-pagination-bullets-active .swiper-pagination-bullet-active {
     width: 55px !important;
     height: 14px !important;
   }
@@ -283,7 +283,7 @@
     min-height: 310px;
     padding: 25px;
   }
-  .swiper-pagination-bullets.swiper-pagination-horizontal {
+  .swiper-pagination-bullets-active.swiper-pagination-horizontal {
     bottom: -6% !important;
   }
 
