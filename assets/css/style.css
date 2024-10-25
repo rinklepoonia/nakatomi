@@ -338,7 +338,7 @@
 }
 
 .price-package-card:hover {
-    transform: scale(1.05);
+    height: 448px;
     z-index: 1;
 }
 
@@ -590,6 +590,11 @@
 }
 
 @media (max-width: 991.5px) {
+    .price-package-card:hover {
+        transform: scale(1.05);
+        z-index: 1;
+    }
+
     .center-text {
         text-align: center;
     }
@@ -748,6 +753,7 @@
     .basic-btn-mt {
         margin-top: 78px;
     }
+
 }
 
 @media (min-width:992px) {
@@ -861,11 +867,6 @@
 
     .enterprise-padding {
         padding: 25px 25px 37px;
-    }
-
-    .price-package-card:hover {
-        height: 448px;
-        z-index: 1;
     }
 
     .pricing-para-pb {
