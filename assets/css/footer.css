@@ -238,6 +238,9 @@
 }
 
 @media (max-width:768px) {
+  .pt-footer{
+    padding-top: 60px;
+  }
   .mb-deploy {
     margin-bottom: 25px;
   }
@@ -256,6 +259,10 @@
 }
 
 @media (max-width:576px) {
+  .pt-footer{
+    padding-top: 50px;
+    margin-top: -20px;
+  }
   .slide-ellip{
     width: 100%;
   }

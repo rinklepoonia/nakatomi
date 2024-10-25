@@ -16,7 +16,6 @@
     --fs-4xl: 28px;
     --fs-5xl: 32px;
     /* color */
-
     --light-gray: #B3B2B3;
     --light-gray-100: #B2B2B2;
     --off-white: #BDBCB8;
@@ -252,7 +251,6 @@
 }
 
 @media (min-width:768px) {
-
     :root {
         /* font size */
         --fs-md: 14px;
@@ -286,7 +284,6 @@
 }
 
 @media (min-width:1200px) {
-
     :root {
         /* font size */
         --fs-xxs: 8px;

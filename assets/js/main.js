@@ -16,6 +16,30 @@ function handleNavVisibility() {
     document.querySelector(".menu").classList.toggle("cross");
   }
 }
+// =======================dropdown =========================//
+function toggleClass() {
+  const btn = document.getElementById('btn');
+   const arrow = document.getElementById('dropdown-arrow');
+  btn.classList.toggle("active");
+    arrow.classList.toggle("rotate");
+
+   event.stopPropagation();
+
+    document.addEventListener('click', function(e) {
+        if (!btn.contains(e.target) && btn.classList.contains("active")) {
+          btn.classList.remove("active");
+            arrow.classList.remove("rotate");
+        }
+    });
+}
+
+$(document).ready(function () {
+    $('.Travel_link').on('click', function () {
+        $('.Travel_link').removeClass('active');
+        $(this).addClass('active');
+    })
+});
+
 
 document.querySelectorAll('.accordion-button').forEach(button => {
   button.addEventListener('click', function () {
