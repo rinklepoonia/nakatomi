@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(./root.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: Lucida;
+  src: url("/assets/fonts/lucida-sans/l_10646.ttf");
+  font-display: swap;
+}
+
+.ff-lucida {
+  font-family: "Lucida", sans-serif;
+}
+
+.ff-poppins {
+  font-family: "Poppins", sans-serif;
+}
+/* CLOUD SWIPER */
+.swiper {
+  width: 100%;
+  max-width: 1140px;
+  height: 240px;
+}
+.swiper-slide:hover .cloud-card img{
+  box-shadow: 0px 0px 14.7px 0px #AE862566;
+  transition: all 300ms linear;
+
+}
+.radius-12{
+  border-radius: 12px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cloud-card {
+  max-width: 267px;
+  border: 1px solid;
+  border-image-source: linear-gradient(135.38deg, rgba(255, 255, 255, 0.06) 0.59%, rgba(255, 255, 255, 0) 99.41%) 1;
+  background: linear-gradient(315.97deg, rgba(255, 255, 255, 0) 1.86%, rgba(255, 255, 255, 0.1) 99.45%);
+  padding: 16px;
+  border-radius: 18px;
+  position: relative;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.cloud-card:hover {
+  border-color: transparent;
+}
+
+.cloud-card:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.6) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: background 0.3s ease;
+}
+
+
+.cloud-card-heading {
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.swiper-button-style {
+  width: 45px !important;
+  height: 45px;
+  border-radius: 50%;
+  border: 0.75px solid var(--white-smoke);
+  transition: all 300ms linear;
+  background: transparent;
+}
+
+.swiper-button-style:hover {
+  border: 0.75px solid transparent;
+  background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+  transition: background 0.3s ease;
+}
+
+.swiper-button-style:hover svg path {
+  transition: all 300ms linear;
+  fill: #020001 !important;
+}
+
+.rotate-next-icon {
+  rotate: -180deg !important;
+}
+
+.swiper-btn-prev {
+  left: -71px;
+  top: 0%;
+  z-index: 2;
+  display: none !important;
+}
+
+.swiper-btn-next {
+  right: -71px;
+  display: none !important;
+  top: 0%;
+  z-index: 2;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+/* LOGO SLIDER */
+.logo-size {
+  min-width: 150px;
+  height: 121px;
+}
+
+.logo-slider .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.logo-slider {
+  max-width: 1440px;
+}
+
+.section-spacing {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.slider-icons {
+  max-width: 120px;
+  width: 100%;
+  object-fit: contain !important;
+}
+
+/* CENTER SWIPER */
+.center-swiper .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.center-swiper .swiper-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.businesses-card {
+  padding: 16px;
+  background: linear-gradient(315.97deg, rgba(255, 255, 255, 0) 1.86%, rgba(255, 255, 255, 0.1) 99.45%);
+  border: 1px solid;
+  border-image-source: linear-gradient(135.38deg, rgba(255, 255, 255, 0.1) 0.59%, rgba(255, 255, 255, 0) 99.41%)1;
+  border-radius: 18px;
+}
+
+.business-card-profile {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.business-starts {
+  width: 114px;
+  height: 22px;
+  margin-top: 20px;
+}
+
+.business-card-description {
+  max-width: 532px;
+  margin-top: 20px;
+}
+
+.center-swiper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto !important;
+}
+
+.down-comma {
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  left: -10px;
+}
+
+.up-comma {
+  width: 20px;
+  height: 20px;
+  bottom: -20px;
+  right: -10px;
+}
+.max-sm-px{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.center-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -54px !important;
+}
+.center-swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 26px !important;
+  height: 15px !important;
+  border-radius: 12px !important;
+  border: none !important;
+  opacity: 1 !important;
+  background: #322811;
+}
+.center-swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  width: 65px !important;
+  height: 15px !important;
+  background: #D2AC47 !important;
+  border-radius: 12px !important;
+  border: none !important;
+}
+.center-swiper .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 3px !important;
+}
+.cloud-swiper-mt{
+  margin-top: 30px;
+}
+
+@media (min-width:576px) {
+  .swiper {
+    height: 260px;
+  }
+  .cloud-swiper-mt{
+    margin-top: 40px;
+  }
+  .max-sm-px{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .businesses-card {
+    padding: 20px;
+  }
+  .logo-size {
+    min-width: 200px;
+    height: 121px;
+  }
+
+  .slider-icons {
+    max-width: 140px;
+    width: 100%;
+    object-fit: contain !important;
+  }
+
+  .section-spacing {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width:768px) {
+  .swiper {
+    height: 290px;
+  }
+  .cloud-swiper-mt{
+    margin-top: 50px;
+  }
+  .businesses-card {
+    padding: 26px;
+  }
+  .slider-icons {
+    max-width: 160px;
+  }
+
+  .logo-size {
+    min-width: 240px;
+    height: 121px;
+  }
+
+  .section-spacing {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width:992px) {
+  .swiper {
+    height: 280px;
+  }
+  .cloud-card {
+    padding: 22px;
+  }
+  .down-comma {
+    top: 10px;
+    left: -25px;
+  }
+  
+  .up-comma {
+    bottom: -8px;
+    right: -20px;
+  }
+  .businesses-card {
+    padding: 30px;
+  }
+  .business-card-profile {
+    border-radius: 50%;
+    width: 99px;
+    height: 99px;
+  }
+  .slider-icons {
+    max-width: unset;
+  }
+
+  .logo-size {
+    min-width: 267px;
+    height: 121px;
+  }
+
+  .section-spacing {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width:1200px) {
+  .cloud-card-heading {
+    margin-top: 26px;
+    margin-bottom: 16px;
+  }
+  .swiper {
+    height: 320px;
+  }
+  .businesses-card {
+    padding: 40px;
+  }
+  .down-comma {
+    width: 38px;
+    height: 28px;
+    top: 10px;
+    left: -30px;
+  }
+  
+  .up-comma {
+    width: 31px;
+    height: 23px;
+    bottom: -8px;
+    right: 20px;
+  }
+  .section-spacing {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width:1400px) {
+  .section-spacing {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  .container {
+    padding: 20px !important;
+    max-width: 1180px !important;
+  }
+}
