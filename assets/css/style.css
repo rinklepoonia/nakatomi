@@ -337,11 +337,6 @@
     position: relative;
 }
 
-.price-package-card:hover {
-    height: 448px;
-    z-index: 1;
-}
-
 .price-package-card::before {
     content: "";
     position: absolute;
@@ -871,6 +866,11 @@
 
     .pricing-para-pb {
         padding-bottom: 35px;
+    }
+
+    .price-package-card:hover {
+        height: 448px;
+        z-index: 1;
     }
 }
 
