@@ -292,6 +292,12 @@
 }
 
 /* price-package   */
+.position-price-ellipse {
+    top: 53px;
+    right: -83px;
+    z-index: 0;
+}
+
 .pricing-package-spacing {
     gap: 14px;
     margin-bottom: 12px;
@@ -361,6 +367,7 @@
     right: -43px;
 }
 
+
 /* Supported Cloud Providers */
 .section-spacing {
     padding-top: 28px;
@@ -428,12 +435,38 @@
 }
 
 .position-cloud-ellipse {
-    top: -101px;
+    bottom: -101px;
     left: -200px;
 }
 
 /* =======================who we are================= */
+.position-bg-ellipse {
+    top: 2%;
+    right: 0;
+}
 
+.negative-margin {
+    margin-top: -3px;
+}
+
+.position-who-we-ellipse1 {
+    top: 0;
+    right: -12%;
+    opacity: 17%;
+}
+
+.position-who-we-ellipse2 {
+    bottom: 0;
+    left: -12%;
+    opacity: 17%;
+}
+
+.who-we-ellipse {
+    width: 361px;
+    height: 361px;
+    background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+    filter: blur(111px);
+}
 
 .user-ratio-box {
     border-radius: 10px;
