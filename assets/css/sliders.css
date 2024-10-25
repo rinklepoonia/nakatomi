@@ -23,18 +23,21 @@
 .ff-poppins {
   font-family: "Poppins", sans-serif;
 }
+
 /* CLOUD SWIPER */
 .swiper {
   width: 100%;
   max-width: 1140px;
   height: 240px;
 }
-.swiper-slide:hover .cloud-card img{
+
+.swiper-slide:hover .cloud-card img {
   box-shadow: 0px 0px 14.7px 0px #AE862566;
   transition: all 300ms linear;
 
 }
-.radius-12{
+
+.radius-12 {
   border-radius: 12px;
 }
 
@@ -151,9 +154,17 @@
 }
 
 /* CENTER SWIPER */
+.center-swiper-max-w {
+  max-width: 1440px;
+}
+
 .center-swiper .swiper-container {
   width: 100%;
   height: 100%;
+}
+
+.pb-dots {
+  padding-bottom: 55px;
 }
 
 .center-swiper .swiper-slide {
@@ -205,7 +216,8 @@
   bottom: -20px;
   right: -10px;
 }
-.max-sm-px{
+
+.max-sm-px {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -213,6 +225,7 @@
 .center-swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: -54px !important;
 }
+
 .center-swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   width: 26px !important;
   height: 15px !important;
@@ -221,6 +234,7 @@
   opacity: 1 !important;
   background: #322811;
 }
+
 .center-swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
   width: 65px !important;
   height: 15px !important;
@@ -228,10 +242,13 @@
   border-radius: 12px !important;
   border: none !important;
 }
-.center-swiper .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
+.center-swiper .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 3px !important;
 }
-.cloud-swiper-mt{
+
+.cloud-swiper-mt {
   margin-top: 30px;
 }
 
@@ -239,16 +256,20 @@
   .swiper {
     height: 260px;
   }
-  .cloud-swiper-mt{
+
+  .cloud-swiper-mt {
     margin-top: 40px;
   }
-  .max-sm-px{
+
+  .max-sm-px {
     padding-left: 0;
     padding-right: 0;
   }
+
   .businesses-card {
     padding: 20px;
   }
+
   .logo-size {
     min-width: 200px;
     height: 121px;
@@ -270,12 +291,15 @@
   .swiper {
     height: 290px;
   }
-  .cloud-swiper-mt{
+
+  .cloud-swiper-mt {
     margin-top: 50px;
   }
+
   .businesses-card {
     padding: 26px;
   }
+
   .slider-icons {
     max-width: 160px;
   }
@@ -295,26 +319,31 @@
   .swiper {
     height: 280px;
   }
+
   .cloud-card {
     padding: 22px;
   }
+
   .down-comma {
     top: 10px;
     left: -25px;
   }
-  
+
   .up-comma {
     bottom: -8px;
     right: -20px;
   }
+
   .businesses-card {
     padding: 30px;
   }
+
   .business-card-profile {
     border-radius: 50%;
     width: 99px;
     height: 99px;
   }
+
   .slider-icons {
     max-width: unset;
   }
@@ -335,25 +364,29 @@
     margin-top: 26px;
     margin-bottom: 16px;
   }
+
   .swiper {
     height: 320px;
   }
+
   .businesses-card {
     padding: 40px;
   }
+
   .down-comma {
     width: 38px;
     height: 28px;
     top: 10px;
     left: -30px;
   }
-  
+
   .up-comma {
     width: 31px;
     height: 23px;
     bottom: -8px;
     right: 20px;
   }
+
   .section-spacing {
     padding-top: 60px;
     padding-bottom: 60px;
