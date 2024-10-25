@@ -291,6 +291,81 @@
     left: 0;
 }
 
+/* price-package   */
+.pricing-package-spacing {
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.amount-mb {
+    margin-bottom: 10px;
+}
+
+.basic-btn-mt {
+    margin-top: 20px;
+}
+
+.pro-btn-mt {
+    margin-top: 15px;
+}
+
+.enterprise-btn-mt {
+    margin-top: 16px;
+}
+
+.small-sc-padding {
+    padding: 20px 16px;
+}
+
+.min-h-448 {
+    min-height: 488px;
+}
+
+.pricing-para-pb {
+    padding-bottom: 25px;
+}
+
+.price-package-card {
+    overflow: hidden;
+    max-width: 364px;
+    height: auto;
+    /* padding: 25px 25px 39px 25px; */
+    border-radius: 18px;
+    background: linear-gradient(315.97deg, rgba(255, 255, 255, 0) 1.86%, rgba(255, 255, 255, 0.1) 99.45%);
+    backdrop-filter: blur(20px);
+    transition: height 0.3s ease, z-index 0s;
+    position: relative;
+}
+
+.price-package-card:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.price-package-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    padding: 1px;
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.1) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    transition: all 300ms linear;
+}
+
+.price-package-card:hover::before {
+    background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.6) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+}
+
+.position-popular {
+    top: -44px;
+    right: -43px;
+}
+
 /* Supported Cloud Providers */
 .section-spacing {
     padding-top: 28px;
@@ -523,6 +598,11 @@
         margin: 0 auto;
     }
 
+    .price-package-card {
+        transition: transform 0.3s ease;
+        transform-origin: center;
+    }
+
     .menu {
         position: relative;
         z-index: 100;
@@ -664,6 +744,10 @@
         width: 26px;
         height: 26px;
     }
+
+    .basic-btn-mt {
+        margin-top: 78px;
+    }
 }
 
 @media (min-width:992px) {
@@ -747,12 +831,45 @@
     }
 
     .user-padding {
-        margin-top: -50px;
+        margin-top: -42px;
         padding-bottom: 50px;
     }
 
     .mission-btn-mt {
         margin-top: 50px;
+    }
+
+    .basic-btn-mt {
+        margin-top: 85px;
+    }
+
+    .amount-mb {
+        margin-bottom: 30px;
+    }
+
+    .price-package-card {
+        height: 422px;
+    }
+
+    .basic-padding {
+        padding: 25px 25px 39px 25px;
+    }
+
+    .pro-padding {
+        padding: 25px 25px 37px;
+    }
+
+    .enterprise-padding {
+        padding: 25px 25px 37px;
+    }
+
+    .price-package-card:hover {
+        height: 448px;
+        z-index: 1;
+    }
+
+    .pricing-para-pb {
+        padding-bottom: 35px;
     }
 }
 
@@ -777,6 +894,10 @@
 
     .para-pb {
         padding-bottom: 50px;
+    }
+
+    .pricing-para-pb {
+        padding-bottom: 40px;
     }
 }
 

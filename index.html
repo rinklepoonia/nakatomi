@@ -41,12 +41,11 @@
                                     class="nav-items fw-normal fs-md leading-117" href="#blog">Blog</a>
                             </li>
                             <li class="d-sm-none">
-                                <a href="#joinWaitlist" onclick="closeNav()">
-                                    <button aria-label="join Waitlist"
-                                        class="nav-btn d-sm-none d-block d-flex align-items-center fw-semibold fs-md leading-117">Join
-                                        the Waitlist
-                                    </button>
-                                </a>
+                                <button onclick="closeNav()" aria-label="join Waitlist"
+                                    class="nav-btn d-sm-none d-block d-flex align-items-center fw-semibold fs-md leading-117 hover:text-black">
+                                    Join
+                                    the Waitlist
+                                </button>
                             </li>
                         </ul>
                         <div class="d-flex align-items-center gap-4">
@@ -72,12 +71,10 @@
                                             class="fw-normal fs-md leading-150 dropdown-option clr-light-gray cursor-poniter">Franch</span>
                                     </div>
                                 </div>
-                                <a href="#joinWaitlist">
-                                    <button aria-label="join Waitlist"
-                                        class="nav-btn d-none d-sm-block d-flex align-items-center fw-semibold fs-md leading-117">Join
-                                        the Waitlist
-                                    </button>
-                                </a>
+                                <button aria-label="join Waitlist"
+                                    class="nav-btn d-none d-sm-block d-flex align-items-center fw-semibold fs-md leading-117">Join
+                                    the Waitlist
+                                </button>
                             </div>
                             <div class="menu d-lg-none" onclick="openNav()">
                                 <span></span>
@@ -104,17 +101,112 @@
                     secure
                     cloud systems and
                     meet compliance standards without extra tech teams.</p>
-                <div class="mx-auto text-center"><button
+                <div class="mx-auto text-center"><button aria-label="join the Waitlist"
                         class="common-btn fw-semibold fs-md leading-150 clr-dark-black hero-btn-mb">Join the
                         Waitlist</button></div>
-                <div class="mx-auto text-center"><img width="970" height="529"
-                        class="object-fit-cover object-position-top dashboard-image w-100"
-                        src="./assets/images/webp/Dashboard.webp" alt="Dashboard"></div>
+                <div class="mx-auto text-center">
+                    <img width="970" height="529" class="object-fit-cover object-position-top dashboard-image w-100"
+                        src="./assets/images/webp/Dashboard.webp" alt="Dashboard">
+                </div>
             </div>
         </div>
     </header>
-    <!-- Supported Cloud
-                    Providers -->
+    <!-- =====================Pricing Packages============== -->
+    <section class="bg-dark-black section-spacing">
+        <div class="container">
+            <div class="secure-text mx-auto">
+                <p class="ff-lucida fw-normal fs-sm leading-150 clr-white-smoke text-center mb-0">Pricing Packages</p>
+            </div>
+            <h2 class="common-heading ff-lucida text-center mb-lg-3 mb-2">Flexible Pricing Tailored to<span
+                    class="gradient-text ff-lucida fw-semibold">Your Needs</span></h2>
+            <p class="common-para pricing-para-pb text-center mb-0">Choose the plan that best fits your business, or contact us
+                for a custom solution.
+            </p>
+            <!-- cards -->
+            <div class="d-flex flex-wrap gap-lg-0 gap-4 justify-content-center align-items-center min-h-448">
+
+                <div class="price-package-card basic-padding small-sc-padding w-100">
+                    <p class="ff-lucida fw-normal fs-sm leading-150 gradient-text mb-2 pb-1">Basic</p>
+                    <p class="ff-lucida fw-normal fs-3xxl leading-120 text-white amount-mb">¥10,000/<span
+                            class="fs-md clr-dim-grey">month</span></p>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">Basic Infrastructure Setup</p>
+                    </div>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">Secure Cloud Deployment</p>
+                    </div>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">Community access</p>
+                    </div>
+                    <div class="mx-auto text-center"><button class="common-btn basic-btn-mt">Get Started with
+                            Basic</button></div>
+                </div>
+
+                <div class="price-package-card pro-padding small-sc-padding w-100 position-relative">
+                    <img width="171" height="165" class="position-absolute position-popular"
+                        src="./assets/images/webp/most-popular.webp" alt="most-popular">
+                    <p class="ff-lucida fw-normal fs-sm leading-150 gradient-text mb-2 pb-1">Pro</p>
+                    <p class="ff-lucida fw-normal fs-3xxl leading-120 text-white amount-mb">¥15,000/<span
+                            class="fs-md clr-dim-grey">month</span></p>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0 text-nowrap">Includes all features
+                            from Basic Plan</p>
+                    </div>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">Third-Party Tool Integration</p>
+                    </div>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">Advanced security compliance </p>
+                    </div>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">Automated compliance reminders </p>
+                    </div>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">Priority email support </p>
+                    </div>
+                    <div class="mx-auto text-center"><button class="common-btn pro-btn-mt">Upgrade to Pro</button></div>
+                </div>
+                <div class="price-package-card small-sc-padding enterprise-padding w-100">
+                    <p class="ff-lucida fw-normal fs-sm leading-150 gradient-text mb-2 pb-1">Enterprise</p>
+                    <p class="ff-lucida fw-normal fs-3xxl leading-120 text-white amount-mb">¥35,000/<span
+                            class="fs-md clr-dim-grey">month</span></p>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0 text-nowrap">Includes Pro features
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">Custom security docs</p>
+                    </div>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">Dedicated support team </p>
+                    </div>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">24/7 phone and email support </p>
+                    </div>
+                    <div class="d-flex align-items-center pricing-package-spacing">
+                        <img width="17" height="17" src="./assets/images/svg/white-tik.svg" alt="white-tik">
+                        <p class="fw-normal fs-md leading-150 clr-medium-grey mb-0">Tailored architecture system </p>
+                    </div>
+                    <div class="mx-auto text-center"><button class="common-btn enterprise-btn-mt">Get Started with
+                            Enterprise</button></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ===========Supported Cloud Providers================== -->
     <section class="bg-black section-spacing position-relative">
         <div class="cloud-provider-ellipse position-cloud-ellipse position-absolute"></div>
         <div class="container">
@@ -129,14 +221,15 @@
                 platforms.
             </p>
             <div class="d-flex flex-wrap align-items-center justify-content-center cloud-provider-box-gap">
+                <div class="cloud-provider-box d-flex justify-content-center align-items-center">
+                    <img class="cloud-image h-auto object-fit-cover" width="131" height="79"
+                        src="./assets/images/webp/aws.webp" alt="aws">
+                </div>
                 <div class="cloud-provider-box d-flex justify-content-center align-items-center"><img
-                        class="cloud-image h-auto" width="131" height="79" class="object-fit-cover"
-                        src="./assets/images/webp/aws.webp" alt="aws"></div>
-                <div class="cloud-provider-box d-flex justify-content-center align-items-center"><img
-                        class="cloud-image2 h-auto" width="213" height="71" class="object-fit-cover"
+                        class="cloud-image2 h-auto object-fit-cover" width="213" height="71"
                         src="./assets/images/webp/azure.webp" alt="azure"></div>
                 <div class="cloud-provider-box d-flex justify-content-center align-items-center"><img
-                        class="cloud-image3 h-auto" width="148" height="92" class="object-fit-cover"
+                        class="cloud-image3 h-auto object-fit-cover" width="148" height="92"
                         src="./assets/images/webp/google-cloud.webp" alt="google-cloud"></div>
             </div>
         </div>
@@ -148,7 +241,7 @@
                 <p class="ff-lucida fw-normal fs-sm leading-150 clr-white-smoke text-center mb-0">Who We Are</p>
             </div>
             <h2 class="common-heading ff-lucida text-center mb-lg-3 mb-2">Your Cloud Security <span
-                    class="gradient-text ff-lucida">Partner</span></h2>
+                    class="gradient-text ff-lucida fw-semibold">Partner</span></h2>
             <p class="common-para text-center para-pb mb-0">Seamlessly deploy secure architectures on your preferred
                 cloud
                 platforms.
@@ -271,8 +364,7 @@
                         <div class="d-flex align-items-start gap-10 mb-3">
                             <img class="object-fit-cover tik-size" src="./assets/images/svg/tik-mark.svg"
                                 alt="tik-mark">
-                            <p class="common-para max-w-497 mb-0"><span
-                                    class="fw-semibold clr-white-smoke">Continuous
+                            <p class="common-para max-w-497 mb-0"><span class="fw-semibold clr-white-smoke">Continuous
                                     Improvement:</span> We’re committed to evolving with the latest in cloud security to
                                 keep
                                 our customers ahead.</p>
@@ -294,7 +386,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mx-auto text-center"><button
+            <div class="mx-auto text-center"><button aria-label="read more" type="button" role="button"
                     class="common-btn fw-semibold fs-md leading-150 clr-dark-black mission-btn-mt">Read More</button>
             </div>
         </div>
