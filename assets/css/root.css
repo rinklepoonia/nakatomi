@@ -80,11 +80,6 @@
 }
 
 /* ------------------------ FONT-SIZE----------- */
-/*  */
-.fs-xsm{
-    font-size: var(--fs-xsm);
-}
-/*  */
 .fs-xxs {
     font-size: var(--fs-xxs);
 }
@@ -142,11 +137,6 @@
 }
 
 /* -------------------------LINE-HEIGHT-------------- */
-/*  */
-.leading-133{
-    line-height: 133%;
-}
-/*  */
 .leading-84 {
     line-height: 84%;
 }
