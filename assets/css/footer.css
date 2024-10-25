@@ -37,34 +37,42 @@
   border-image-source: linear-gradient(135.38deg, rgba(255, 255, 255, 0.6) 0.59%, rgba(255, 255, 255, 0) 99.41%);
 }
 
-.steps-container .step {
+.step {
   width: 96px;
   height: 88px;
-  background-color: #333;
+  background-color: #333 !important;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFF;
-  z-index: 3;
+ color: #978143 !important;
+    border: 1px solid #978143;
+    background: #000 !important ;
+      z-index: 3;
 }
 
 .steps-container .active {
-  background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+  background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%) !important;
   color: black !important;
+  -webkit-text-fill-color: black;
 }
-
 .step-line {
   position: absolute;
   top: 50%;
   width: 100%;
-  border: dashed !important;
   height: 2px;
-  border: 2px solid;
-  border-image-source: #D2AC47;
+  border: 2px solid #D2AC47;
   background: #D2AC47;
   z-index: 2;
   left: 0;
+  overflow: hidden;
+}
+
+.step-line-fill {
+  height: 100%;
+  width: 0;
+  background: #D2AC47;
+  transition: width 0.5s ease, background 0.5s ease;
 }
 
 .swiper-slide {
@@ -73,7 +81,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* height: 250px; */
 }
 
 .swiper-pagination-bullet-active {
@@ -114,23 +121,106 @@
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 35px !important;
+  bottom: -7% !important;
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   width: 26px !important;
   height: 15px !important;
-  background: #D2AC47 !important;
   border-radius: 12px !important;
+  border: 1px solid #AE8625 !important;
+  opacity: 1 !important;
+
+  background: linear-gradient(90deg, rgba(174, 134, 37, 0.2) 0%, rgba(247, 239, 138, 0.2) 33.73%, rgba(210, 172, 71, 0.2) 72.49%, rgba(237, 201, 103, 0.2) 100%) !important;
+
 }
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
   width: 65px !important;
   height: 15px !important;
   background: #D2AC47 !important;
   border-radius: 12px !important;
+  border: 0px solid #AE8625 !important;
+
 }
 
-@media (max-width:992px) {}
+.pointer-none{
+  pointer-events: none !important;
+}
+
+
+/* footer */
+.footer-logo{
+  width: 53px;
+  height: 53px;
+}
+.footer-para{
+  max-width: 320px;
+}
+.underline-hover:hover {
+  opacity: 1;
+  color: white;
+}
+
+.underline-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.underline-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.py-copyright{
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.footer-whiteline{
+  border: 1px solid;
+  border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 10.42%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 89.59%);
+  }
+  .footer-spacing{
+    padding-top: 50px;
+    padding-bottom: 53px;
+  }
+  .social-icon:hover{
+    transform: translateY(-15%);
+  }
+  .social-icon{
+    transition: all 300ms linear;
+  }
+  .bg-footer{
+    background-image: url('../images/png/footer-layer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 2040px;
+    margin: 0 auto;
+  }
+  .pt-footer{
+    margin-top: -2px;
+    padding-top: 280px;
+  }
+  .slide-bg-layer{
+
+  }
+@media (max-width:1592px) {
+  .pt-footer{
+    padding-top: 100px;
+  }
+}
 
 @media (max-width:768px) {
   .mb-deploy {
@@ -148,14 +238,12 @@
     width: 55px !important;
     height: 14px !important;
   }
-  .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 14% !important;
-  }
-
 }
 
 @media (max-width:576px) {
-
+  .slide-ellip{
+    width: 100%;
+  }
   .steps-container .step {
     width: 72px;
     height: 68px;
@@ -174,7 +262,7 @@
     padding: 25px;
   }
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 26% !important;
+    bottom: -6% !important;
   }
 
 }

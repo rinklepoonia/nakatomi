@@ -1,71 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slider Example</title>
+  <title>Footer</title>
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/footer.css">
   <link rel="stylesheet" href="./assets/css/style.css">
- 
+  <link rel="Icon" href="./assets/images/png/footer-logo.png">
 </head>
+
 <body>
-<div class="bg-dark section-spacing px-20 px-lg-0">
-  <div class="swiper-container swiper-custom-container position-relative overflow-hidden ">
-    <div class="secure-text mx-auto">
-      <p class="ff-lucida fw-normal fs-sm leading-150 clr-white-smoke text-center mb-0">
-        How It Works</p>
-  </div>
-    <h2 class="mb-2 mb-sm-3 mb-md-4 fs-3xxl ff-lucida text-center clr-white-smoke ">Getting Started with <span class="gradient-text fw-semibold">Nakatomi</span></h2>
-    <p class=" fs-md clr-light-gray mx-auto text-center mb-deploy">Deploying secure cloud systems is simple with our platform.</p>
+  <section class="bg-black slide-bg-layer section-spacing px-20 px-lg-0 position-relative">
+    <img src="./assets/images/png/slide-bg-layer.png" alt="layer"
+      class="slide-layer position-absolute w-100 h-100 top-0 bottom-0 start-0 end-0">
+    <div class="position-relative">
+      <div class="swiper-container swiper-custom-container position-relative overflow-hidden ">
+        <div class="secure-text mx-auto">
+          <p class="ff-lucida fw-normal fs-sm leading-150 clr-white-smoke text-center mb-0">
+            How It Works</p>
+        </div>
+        <h2 class="mb-2 mb-sm-3 fs-3xxl ff-lucida text-center clr-white-smoke ">Getting Started with <span
+            class="gradient-text fw-semibold">Nakatomi</span></h2>
+        <p class=" fs-md clr-light-gray mx-auto text-center mb-deploy">Deploying secure cloud systems is simple with our
+          platform.</p>
 
-    <!-- Steps -->
-    <div class="steps-container">
-      <div id="step-line" class="step-line"></div>
-      <div class="step fs-4xl fw-normal active">1</div>
-      <div class="step fs-4xl fw-normal">2</div>
-      <div class="step fs-4xl fw-normal">3</div>
-      <div class="step fs-4xl fw-normal">4</div>
+        <!-- Steps -->
+        <div class="steps-container">
+          <div id="step-line" class="step-line">
+            <div id="step-line-fill" class="step-line-fill"></div>
+          </div>
+          <div class="step fs-4xl fw-normal active">1</div>
+          <div class="step fs-4xl fw-normal">2</div>
+          <div class="step fs-4xl fw-normal">3</div>
+          <div class="step fs-4xl fw-normal">4</div>
+        </div>
+
+
+        <!-- Swiper -->
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide swipe-card">
+            <img class="lock-size position-relative z-2 mb-4" src="./assets/images/png/lock.png" alt="Security Icon">
+            <h2 class="mb-4 clr-white-smoke mt-1 position-relative z-2 fw-normal fs-2xl ff-lucida">Choose Your Security
+              Frameworks</h2>
+            <p class="text-center fs-md position-relative z-2 fw-normal clr-off-white text-center select-para mx-auto">
+              Select from
+              industry-standard security frameworks like SOC2, NIST, <br /> and ISO 27000</p>
+            <img src="./assets/images/svg/lock-ellipse.svg" alt="ellipse"
+              class="position-absolute slide-ellip  bottom-0 pointer-none ">
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide swipe-card">
+            <img class="lock-size position-relative z-2 mb-4" src="./assets/images/png/lock.png" alt="Security Icon">
+            <h2 class="mb-4 clr-white-smoke mt-1 fw-normal position-relative z-2 fs-2xl ff-lucida">Configure Your System</h2>
+            <p class="text-center fs-md fw-normal position-relative z-2 clr-off-white text-center select-para mx-auto">
+              Customize your
+              deployment
+              with our powerful configuration tools.</p>
+            <img src="./assets/images/svg/lock-ellipse.svg" alt="ellipse"
+              class="position-absolute slide-ellip bottom-0 pointer-none ">
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide swipe-card">
+            <img class="lock-size position-relative z-2 mb-4" src="./assets/images/png/lock.png" alt="Security Icon">
+            <h2 class="mb-4 clr-white-smoke mt-1 fw-normal position-relative z-2 fs-2xl ff-lucida">Deploy Securely</h2>
+            <p class="text-center fs-md fw-normal position-relative z-2 clr-off-white text-center select-para mx-auto">
+              Deploy your system with
+              confidence, using industry-best security practices.</p>
+            <img src="./assets/images/svg/lock-ellipse.svg" alt="ellipse"
+              class="position-absolute slide-ellip bottom-0 pointer-none ">
+
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide swipe-card">
+            <img class="lock-size position-relative z-2 mb-4" src="./assets/images/png/lock.png" alt="Security Icon">
+            <h2 class="mb-4 clr-white-smoke mt-1 position-relative z-2 fw-normal fs-2xl ff-lucida">Monitor and Scale</h2>
+            <p class="text-center fs-md fw-normal position-relative z-2 clr-off-white text-center select-para mx-auto">
+              Monitor your system in
+              real-time and scale resources as needed.</p>
+            <img src="./assets/images/svg/lock-ellipse.svg" alt="ellipse"
+              class="position-absolute slide-ellip bottom-0 pointer-none ">
+
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination position-absolute"></div>
     </div>
 
-    <!-- Swiper -->
-    <div class="swiper-wrapper">
-      <!-- Slide 1 -->
-      <div class="swiper-slide swipe-card">
-        <img class="lock-size" src="./assets/images/png/lock.png" alt="Security Icon">
-        <h2 class="mb-4 clr-white-smoke fw-normal fs-2xl ff-lucida">Choose Your Security Frameworks</h2>
-        <p class="text-center fs-md fw-normal clr-off-white text-center select-para mx-auto">Select from industry-standard security frameworks like SOC2, NIST, and ISO 27000</p>
-      </div>
+  </section>
 
-      <!-- Slide 2 -->
-      <div class="swiper-slide swipe-card">
-        <img class="lock-size" src="./assets/images/png/lock.png" alt="Security Icon">
-        <h2 class="mb-4 clr-white-smoke fw-normal fs-2xl ff-lucida">Configure Your System</h2>
-        <p class="text-center fs-md fw-normal clr-off-white text-center select-para mx-auto">Customize your deployment with our powerful configuration tools.</p>
-      </div>
 
-      <!-- Slide 3 -->
-      <div class="swiper-slide swipe-card">
-        <img class="lock-size" src="./assets/images/png/lock.png" alt="Security Icon">
-        <h2 class="mb-4 clr-white-smoke fw-normal fs-2xl ff-lucida">Deploy Securely</h2>
-        <p class="text-center fs-md fw-normal clr-off-white text-center select-para mx-auto">Deploy your system with confidence, using industry-best security practices.</p>
+  <!-- FOOTER -->
+  <footer class="bg-footer position-relative z-5 pt-footer">
+    <div class="container mx-auto pt-5 mt-5">
+      <div>
+        <h2 class="mb-2 mb-sm-3 fs-3xxl ff-lucida text-center clr-white-smoke ">Get in <span
+            class="gradient-text fw-semibold">Touch</span></h2>
+        <p class=" fs-md clr-light-gray-100 mx-auto text-center mb-4">Have more questions? We’re here to help!</p>
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="mailto:contact@nakatomi.com"
+            class="gap-3 fs-md fw-normal leading-150 clr-blue-sky mb-sm-4 pb-sm-2"><svg class="me-1" width="30" height="30"
+              viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.99271 4.54694C1.81576 4.59451 1.64607 4.65826 1.61566 4.68867C1.55338 4.75096 14.2818 17.5329 14.543 17.6703C14.7473 17.7778 15.2541 17.7773 15.457 17.6694C15.7271 17.5258 28.4508 4.75512 28.3871 4.6916C28.3557 4.66026 28.1729 4.59369 27.9809 4.54371C27.6703 4.46285 26.2312 4.45319 14.973 4.45664C4.00752 4.45998 2.27145 4.47205 1.99271 4.54694ZM0.136523 6.28383C0.0345117 6.57639 0.0292969 7.00231 0.0292969 14.9997C0.0292969 22.997 0.0345117 23.4229 0.136523 23.7155C0.195527 23.8846 0.261504 24.0231 0.283184 24.0231C0.304805 24.0231 2.35271 21.9928 4.83398 19.5114L9.34541 14.9997L4.83398 10.4879C2.35271 8.00649 0.304805 5.97621 0.283184 5.97621C0.261504 5.97621 0.195527 6.11461 0.136523 6.28383ZM25.166 10.4879L20.6546 14.9997L25.166 19.5114C27.6473 21.9928 29.6952 24.0231 29.7168 24.0231C29.7385 24.0231 29.8045 23.8846 29.8635 23.7155C29.9655 23.4229 29.9707 22.997 29.9707 14.9997C29.9707 7.00231 29.9655 6.57639 29.8635 6.28383C29.8045 6.11461 29.7385 5.97621 29.7168 5.97621C29.6952 5.97621 27.6473 8.00649 25.166 10.4879ZM6.03668 20.7727C3.30252 23.5123 1.58273 25.2776 1.61578 25.3107C1.64555 25.3404 1.82707 25.4056 2.01914 25.4556C2.32951 25.5364 3.77437 25.5465 15 25.5465C26.2256 25.5465 27.6705 25.5364 27.9809 25.4556C28.1729 25.4056 28.3558 25.339 28.3872 25.3077C28.4242 25.2707 26.8658 23.6722 23.9505 20.757L19.4568 16.2632L18.0572 17.6517C16.7607 18.9381 16.6236 19.0566 16.195 19.2612C15.7361 19.4803 15.7266 19.4821 14.997 19.4821H14.2615L13.7958 19.2523C13.3711 19.0429 13.2084 18.9022 11.9486 17.6556C11.1888 16.9038 10.5546 16.2887 10.5394 16.2887C10.5241 16.2887 8.49791 18.3065 6.03668 20.7727Z"
+                fill="url(#paint0_linear_350_3522)" />
+              <defs>
+                <linearGradient id="paint0_linear_350_3522" x1="0.0292969" y1="15.0013" x2="29.9707" y2="15.0013"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#AE8625" />
+                  <stop offset="0.337255" stop-color="#F7EF8A" />
+                  <stop offset="0.724949" stop-color="#D2AC47" />
+                  <stop offset="1" stop-color="#EDC967" />
+                </linearGradient>
+              </defs>
+            </svg>
+            contact@nakatomi.com
+          </a>
+        </div>
       </div>
+      <div class="row flex-wrap flex-row footer-spacing">
+        <div class="col-xl-5">
+          <a href="/" aria-label="footer-logo"><img class="footer-logo mb-3" src="./assets/images/png/footer-logo.png"
+              alt="logo" /></a>
+          <p class="clr-light-gray-100 leading-150 fs-md fw-normal mb-0 footer-para">
+            At Nakatomi, we simplify cloud security and compliance, empowering businesses to focus on growth.
+          </p>
 
-      <!-- Slide 4 -->
-      <div class="swiper-slide swipe-card">
-        <img class="lock-size" src="./assets/images/png/lock.png" alt="Security Icon">
-        <h2 class="mb-4 clr-white-smoke fw-normal fs-2xl ff-lucida">Monitor and Scale</h2>
-        <p class="text-center fs-md fw-normal clr-off-white text-center select-para mx-auto">Monitor your system in real-time and scale resources as needed.</p>
+        </div>
+        <div class="col-xl-7 pt-4 pt-md-0">
+          <div class="row pt-2 justify-content-xl-end pt-md-4 pt-xl-0">
+            <div class="col-5 col-sm-6 col-md-4">
+              <p class="text-white fs-lg fw-semibold leading-150 mb-3">Quick Links</p>
+
+              <ul class="p-0">
+                <li class="mb-3">
+                  <a aria-label="about" href="#About"
+                    class="clr-light-gray-100 fw-normal fs-md leading-150 underline-hover">About Us</a>
+                </li>
+                <li class="mb-3">
+                  <a aria-label="services" href="#Services"
+                    class="clr-light-gray-100 fw-normal fs-md leading-150 underline-hover">Features</a>
+                </li>
+                <li class="mb-3">
+                  <a aria-label="solutions" href="#Solutions"
+                    class="clr-light-gray-100 fw-normal fs-md leading-150 underline-hover">How It Works</a>
+                </li>
+                <li class="mb-3">
+
+                  <a href="#Testimonials" aria-label="Testimonials"
+                    class="clr-light-gray-100 fw-normal fs-md leading-150 underline-hover">Benefits</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-5 col-lg-5 footer_side_spacing col-md-4">
+              <p class="text-white fs_md leading_150 text-nowrap mb-3">Company Information</p>
+
+              <ul class="p-0">
+                <li class="mb-3">
+                  <a aria-label="legal" href="#"
+                    class="clr-light-gray-100 fw-normal fs-md leading-150 underline-hover">Terms of Service</a>
+                </li>
+                <li class="mb-3">
+                  <a aria-label="privacy" href="#"
+                    class="clr-light-gray-100 fw-normal fs-md leading-150 underline-hover">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 pt-3 pt-md-0 col-md-4">
+              <p class="text-white fs_md leading_150 mb-3">Follow Us</p>
+              <div class="d-flex align-items-center gap-3">
+                <a href="https://www.linkedin.com/" target="_blank" class="social-icon"><svg width="34" height="34"
+                    viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.4187" y="0.4187" width="32.6586" height="32.6586" rx="16.3293"
+                      stroke="url(#paint0_linear_197_2831)" stroke-width="0.8374" />
+                    <path
+                      d="M12.0098 10.8866C12.0095 11.3308 11.8329 11.7567 11.5186 12.0706C11.2044 12.3845 10.7783 12.5608 10.3341 12.5605C9.88993 12.5603 9.46403 12.3836 9.1501 12.0694C8.83617 11.7552 8.65993 11.3291 8.66016 10.8849C8.66038 10.4407 8.83704 10.0148 9.15129 9.70088C9.46553 9.38695 9.89161 9.21072 10.3358 9.21094C10.78 9.21116 11.2059 9.38782 11.5198 9.70207C11.8337 10.0163 12.01 10.4424 12.0098 10.8866ZM12.06 13.8007H8.7104V24.285H12.06V13.8007ZM17.3524 13.8007H14.0195V24.285H17.3189V18.7833C17.3189 15.7184 21.3133 15.4337 21.3133 18.7833V24.285H24.621V17.6444C24.621 12.4776 18.709 12.6702 17.3189 15.2076L17.3524 13.8007Z"
+                      fill="url(#paint1_linear_197_2831)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_197_2831" x1="0" y1="16.748" x2="33.496" y2="16.748"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AE8625" />
+                        <stop offset="0.337255" stop-color="#F7EF8A" />
+                        <stop offset="0.724949" stop-color="#D2AC47" />
+                        <stop offset="1" stop-color="#EDC967" />
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_197_2831" x1="8.66016" y1="16.748" x2="24.621" y2="16.748"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AE8625" />
+                        <stop offset="0.337255" stop-color="#F7EF8A" />
+                        <stop offset="0.724949" stop-color="#D2AC47" />
+                        <stop offset="1" stop-color="#EDC967" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+                <a href="https://x.com/" target="_blank" class="social-icon"><svg width="35" height="34"
+                    viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.3064" y="0.4187" width="32.6586" height="32.6586" rx="16.3293"
+                      stroke="url(#paint0_linear_197_2834)" stroke-width="0.8374" />
+                    <g clip-path="url(#clip0_197_2834)">
+                      <path
+                        d="M22.9138 7.64062H25.9962L19.2635 15.3556L27.1845 25.8541H20.9831L16.1258 19.4856L10.5676 25.8541H7.48384L14.6851 17.6015L7.08691 7.64062H13.4465L17.8366 13.4601L22.9138 7.64062ZM21.8335 24.0051H23.5418L12.517 9.39288H10.6856L21.8335 24.0051Z"
+                        fill="url(#paint1_linear_197_2834)" />
+                    </g>
+                    <defs>
+                      <linearGradient id="paint0_linear_197_2834" x1="0.887695" y1="16.748" x2="34.3837" y2="16.748"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AE8625" />
+                        <stop offset="0.337255" stop-color="#F7EF8A" />
+                        <stop offset="0.724949" stop-color="#D2AC47" />
+                        <stop offset="1" stop-color="#EDC967" />
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_197_2834" x1="7.08691" y1="16.7473" x2="27.1845" y2="16.7473"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#AE8625" />
+                        <stop offset="0.337255" stop-color="#F7EF8A" />
+                        <stop offset="0.724949" stop-color="#D2AC47" />
+                        <stop offset="1" stop-color="#EDC967" />
+                      </linearGradient>
+                      <clipPath id="clip0_197_2834">
+                        <rect width="20.0976" height="20.0976" fill="white" transform="translate(7.08691 6.69922)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="footer-whiteline d-flex w-100"></div>
+    <p class="clr-light-gray-100 leading-150 fs-md fw-normal mb-0 text-center py-copyright">
+      © <span id="current-year"></span> Nakatomi. All rights reserved.
+    </p>
+  </footer>
 
-    <!-- Pagination -->
-  </div>
-  <div class="swiper-pagination position-absolute"></div>
+  <script>
+    // =========================YEAR FUNCTION===============
+    function setCurrentYear() {
+      const yearSpan = document.getElementById("current-year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    }
+    document.addEventListener("DOMContentLoaded", setCurrentYear);
+  </script>
 
-</div>
+
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper-container', {
@@ -75,20 +265,34 @@
       },
       on: {
         slideChange: function () {
-          const activeIndex = this.activeIndex + 1;
+          const activeIndex = this.activeIndex;
+          const totalSlides = this.slides.length;
+          const fillPercentage = (activeIndex / (totalSlides - 1)) * 100;
+  
+          // Update the step-line-fill width
+          const fillElement = document.getElementById('step-line-fill');
+          fillElement.style.width = fillPercentage + '%';
+  
+          const lightColor = [210, 172, 71];  
+          const darkColor = [51, 51, 51];   
+  
+          const r = Math.round(lightColor[0] + (darkColor[0] - lightColor[0]) * (fillPercentage / 100));
+          const g = Math.round(lightColor[1] + (darkColor[1] - lightColor[1]) * (fillPercentage / 100));
+          const b = Math.round(lightColor[2] + (darkColor[2] - lightColor[2]) * (fillPercentage / 100));
+  
+          fillElement.style.background = `rgb(${r}, ${g}, ${b})`;
+  
           document.querySelectorAll('.step').forEach((el, index) => {
-            el.classList.remove('active');
-            if (index < activeIndex) {
-              el.classList.add('active');
-            }
+            el.classList.toggle('active', index <= activeIndex);
           });
         },
       },
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-  crossorigin="anonymous"></script>
-<script src="./assets/js/main.js"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
