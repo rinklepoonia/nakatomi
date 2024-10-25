@@ -51,6 +51,7 @@
       z-index: 3;
 }
 
+
 .steps-container .active {
   background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%) !important;
   color: black !important;
@@ -67,6 +68,7 @@
   left: 0;
   overflow: hidden;
 }
+
 
 .step-line-fill {
   height: 100%;
@@ -88,15 +90,28 @@
 }
 
 .swipe-card {
-  border: 1px solid;
   border-radius: 18px;
-  border-image-source: linear-gradient(135.38deg, rgba(255, 255, 255, 0.6) 0.59%, rgba(255, 255, 255, 0) 99.41%);
   background: linear-gradient(315.97deg, rgba(255, 255, 255, 0) 1.86%, rgba(255, 255, 255, 0.1) 99.45%);
   backdrop-filter: blur(20px);
   height: 397px;
   width: 838px;
   padding: 40px;
 }
+.swipe-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(135.38deg, rgba(255, 255, 255, 0.1) 0.59%, rgba(255, 255, 255, 0) 99.41%);
+  -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 0;
+}
+
 
 .lock-size {
   height: 185px !important;
