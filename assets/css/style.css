@@ -26,12 +26,17 @@
     padding-right: 20px !important;
 }
 
+.nakatomi-logo {
+    max-width: 144px;
+    height: 45px;
+}
+
 .gap-10 {
     gap: 10px;
 }
 
 .hero-bg {
-    background-image: url(../images/webp/hero-bg.webp);
+    background-image: url(../images/png/small-hero-bg.png);
     background-size: 100% 100%;
     background-position: center;
 }
@@ -127,12 +132,8 @@
 
 /* hero */
 .hero-padding {
-    padding-top: 37px;
-    padding-bottom: 133px;
-}
-
-.max-w-817 {
-    max-width: 817px;
+    padding-top: 60px;
+    padding-bottom: 100px;
 }
 
 .object-position-top {
@@ -171,7 +172,7 @@
 
 .common-btn {
     background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%)border-box;
-    padding: 9px 17px;
+    padding: 12px 28px;
     border-radius: 57px;
     border: 1px solid transparent;
     transition: all 300ms ease;
@@ -207,27 +208,27 @@
 }
 
 .dashboard-image {
-    max-width: 320px;
-    height: auto;
-    border-radius: 19px;
+    max-width: 343px;
+    height: 187px;
+    border-radius: 6.75px;
 }
 
-.hero-left-ellipse-pos {
+/* .hero-left-ellipse-pos {
     top: 30%;
     left: 0;
-}
+} */
 
-.hero-right-ellipse-pos {
+/* .hero-right-ellipse-pos {
     top: 22%;
     right: 0;
-}
+} */
 
 .ellipse-opacity {
     opacity: 30%;
 }
 
 .hero-btn-mb {
-    margin-bottom: 29px;
+    margin-bottom: 40px;
 }
 
 .z-99 {
@@ -293,6 +294,10 @@
 }
 
 /* price-package   */
+.block-text {
+    display: block;
+}
+
 .position-price-ellipse {
     top: 53px;
     right: -83px;
@@ -305,11 +310,11 @@
 }
 
 .amount-mb {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .basic-btn-mt {
-    margin-top: 20px;
+    margin-top: 86px;
 }
 
 .pro-btn-mt {
@@ -321,7 +326,7 @@
 }
 
 .small-sc-padding {
-    padding: 20px 16px;
+    padding: 20px 16px 41px 16px;
 }
 
 .min-h-448 {
@@ -329,7 +334,7 @@
 }
 
 .pricing-para-pb {
-    padding-bottom: 25px;
+    padding-bottom: 40px;
 }
 
 .price-package-card {
@@ -666,7 +671,7 @@
         height: 4px;
         display: block;
         border-radius: 5px;
-        background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+        background: var(--white-smoke);
         transition: all 300ms linear;
     }
 
@@ -675,7 +680,7 @@
         height: 4px;
         display: block;
         border-radius: 5px;
-        background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+        background: var(--white-smoke);
         transition: all 300ms linear;
     }
 
@@ -684,27 +689,27 @@
         height: 4px;
         display: block;
         border-radius: 5px;
-        background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+        background: var(--white-smoke);
         transition: all 300ms linear;
     }
 
     .cross span:nth-child(1) {
         transition: all 300ms linear;
         transform: rotate(44deg) translateY(13px) translateX(2px);
-        background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+        background: var(--white-smoke);
     }
 
     .cross span:nth-child(2) {
         transform: translateX(-100%);
         transition: all 300ms linear;
         opacity: 0;
-        background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+        background: var(--white-smoke);
     }
 
     .cross span:nth-child(3) {
         transition: all 300ms linear;
         transform: rotate(-45deg) translateY(-14px) translateX(4px);
-        background: linear-gradient(90deg, #AE8625 0%, #F7EF8A 33.73%, #D2AC47 72.49%, #EDC967 100%);
+        background: var(--white-smoke);
     }
 
 }
@@ -725,13 +730,13 @@
         margin-bottom: 53px;
     }
 
-    .common-btn {
+    /* .common-btn {
         padding: 12px 28px;
-    }
+    } */
 
-    .hero-padding {
+    /* .hero-padding {
         padding-top: 69px;
-    }
+    } */
 
     .empowering-box-modification {
         padding: 30px;
@@ -778,14 +783,27 @@
         width: 26px;
         height: 26px;
     }
-
+/* 
     .basic-btn-mt {
         margin-top: 78px;
-    }
+    } */
 
 }
 
 @media (min-width:992px) {
+    .block-text {
+        display: inline-block;
+    }
+
+    .hero-bg {
+        background-image: url(../images/webp/hero-bg.webp);
+    }
+
+    .nakatomi-logo {
+        max-width: 171px;
+        height: 53px;
+    }
+
     .section-spacing {
         padding-top: 48px;
         padding-bottom: 48px;
@@ -796,16 +814,18 @@
     }
 
     .hero-btn-mb {
-        margin-bottom: 81px;
+        margin-bottom: 94px;
     }
 
     .hero-padding {
         padding-top: 110px;
+        padding-bottom: 122px;
     }
 
     .dashboard-image {
         max-width: 970px;
         height: 529px;
+        border-radius: 19px;
     }
 
     .cloud-box-gap {
@@ -874,13 +894,13 @@
         margin-top: 50px;
     }
 
-    .basic-btn-mt {
+    /* .basic-btn-mt {
         margin-top: 85px;
-    }
+    } */
 
-    .amount-mb {
+    /* .amount-mb {
         margin-bottom: 30px;
-    }
+    } */
 
     .price-package-card {
         height: 422px;
@@ -897,10 +917,10 @@
     .enterprise-padding {
         padding: 25px 25px 37px;
     }
-
+/* 
     .pricing-para-pb {
         padding-bottom: 35px;
-    }
+    } */
 
     .price-package-card:hover {
         height: 448px;
@@ -914,10 +934,10 @@
         padding-bottom: 60px;
     }
 
-    .hero-left-ellipse-pos {
+    /* .hero-left-ellipse-pos {
         top: 40%;
         left: 0;
-    }
+    } */
 
     .ellipse-opacity {
         opacity: 100%;
@@ -931,9 +951,9 @@
         padding-bottom: 50px;
     }
 
-    .pricing-para-pb {
+    /* .pricing-para-pb {
         padding-bottom: 40px;
-    }
+    } */
 }
 
 @media (min-width:1400px) {

@@ -5,14 +5,14 @@
     --fs-xsm: 12px;
     --fs-custom-xsm: 13px;
     --fs-sm: 14px;
-    --fs-md: 14px;
+    --fs-md: 16px;
     --fs-lg: 15px;
     --fs-custom-xl: 15px;
     --fs-xl: 15px;
     --fs-2xl: 16px;
     --fs-3xl: 18px;
     --fs-custom-3xl: 20px;
-    --fs-3xxl: 24px;
+    --fs-3xxl: 28px;
     --fs-4xl: 28px;
     --fs-5xl: 32px;
     /* color */
@@ -303,6 +303,6 @@
         --fs-custom-3xl: 32px;
         --fs-3xxl: 42px;
         --fs-4xl: 48px;
-        --fs-5xl: 65px;
+        --fs-5xl: 60px;
     }
 }
